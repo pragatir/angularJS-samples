@@ -1,0 +1,15 @@
+{
+  "name": "autoValidate",
+  "authors": [
+    "Pragati Rithekar <pragati.rithekar@globant.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular-auto-validate": "^1.19.6",
+    "angular-ladda": "^0.4.3"
+  }
+}
