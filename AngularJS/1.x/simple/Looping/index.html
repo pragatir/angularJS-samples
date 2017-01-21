@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="codecraft">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	</head>
+	<body>
+		<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">
+						List Of Things
+					</a>
+				</div>
+			</div>
+		</nav> -->
+
+		<div class="container main-content" ng-controller="PersonsController">
+			<table class="table table-bordered">
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Birthday</th>
+				</tr>
+
+				<tr ng-repeat="person in persons">
+					<td>{{$index}}</td>
+					<td>{{person.name}}</td>
+					<td>{{person.email}}</td>
+					<td>{{person.birthdate | date:"longDate"}}</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
